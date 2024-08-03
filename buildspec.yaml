@@ -7,7 +7,7 @@ phases:
   build:
     commands:
       - docker build -t ai .
-      - docker tag ai:latest 730335336547.dkr.ecr.eu-north-1.amazonaws.com/ijse-ai:latest
+      - docker tag ai:latest 730335336547.dkr.ecr.eu-north-1.amazonaws.com/ijse
   post_build:
     commands:
       - docker push 730335336547.dkr.ecr.eu-north-1.amazonaws.com/ijse-ai:latest
